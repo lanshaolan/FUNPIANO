@@ -32,5 +32,46 @@ var vue3 = new Vue({
 });
 
 var vue4 = new Vue({
-    el: "#vue4"
+    el: "#vue4",
+    data: {
+        products: [
+            {name: "奶茶", price: 45},
+            {name: "紅茶", price: 40},
+            {name: "綠茶", price: 40},
+            {name: "青茶", price: 35},
+            {name: "咖啡", price: 70}
+        ]
+    }
+});
+
+// methods 定義函式
+// 函式名稱: function() { 函式內容 }
+var vue5 = new Vue({
+    el: "#vue5",
+    data : {
+        text: "",
+        count: 0,
+        msg: ""
+    },
+    methods: {
+        show: function() {
+            this.text = "點到了~"
+        },
+        add: function() {
+            this.count++;
+        },
+        sub: function () {
+            this.count--;
+        },
+        change: function() {
+            this.msg = "點到了!!!"
+        }
+    }
+});
+
+var vue6 = new Vue({
+    el: "#vue6",
+    data: {
+        name: ""
+    }
 });
