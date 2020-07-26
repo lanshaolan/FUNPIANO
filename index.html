@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div id="navbar">
+        <navbar></navbar>
+    </div>
+
     <h1>定義渲染區域</h1>
     <div id="vue1">
         {{ text }}
@@ -88,7 +92,23 @@
         <p>{{ name }} 您好，這是您的帳號資訊：...</p>
     </div>
 
+    <h1>元件</h1>
 
+    <!-- 使用元件 -->
+    <div id="vue7">
+        <test-a></test-a>
+        <test-a></test-a>
+        <test-a></test-a>
+        <test-a></test-a>
+        <test-a></test-a>
+    </div>
+
+    <div id="vue8">
+        <vue-content></vue-content>
+        <vue-content></vue-content>
+        <vue-content></vue-content>
+        <vue-content></vue-content>
+    </div>
 
     <!-- Vue CDN -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
