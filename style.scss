@@ -5,7 +5,11 @@
     font-family: 微軟正黑體;
 }
 
+    
+
+
 body {
+    
     padding: 15px;
     height: 3000px;
 }
@@ -16,24 +20,91 @@ h1 {
     border-bottom: 7px solid #eee;
 }
 
-#navbar nav{
+
+
+// 輪播 圖片
+body {
+   
+    background :  url(./img/dane.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background : white;
+}
+
+.carousel-item img {
+    height: 600px;
+    // 元素適應：自動縮放
+    object-fit: cover;
+}
+
+.card-img {
+    height: 300px !important;
+    object-fit: cover;
+}
+
+// 卡片 圖片
+.card img {
+    height: 500px;
+    object-fit: cover;
+}
+
+form {
+    margin :0 0 0 400px ;
+}
+
+/* 導覽列 */
+#navbar nav {
+    
+    padding: 30px 100px;
+    /* 定位：固定 */
+    position: static;
+    /* 上：0 bottom 下 */
+    top: 0;
+    
+}
+
+#navbar nav > div {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 50% 50%;
+    width: 1200px;
+    margin: auto ;
+}
+
+
+#navbar nav {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(6, 1fr);
+    /* 對齊項目(垂直) */
+    align-items: left;
+    text-align: left;
+}
+
+#navbar nav a {
+    /* 文字-裝飾 - 底線、刪除線 */
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    /* 轉場：時間 */
+    transition: 0.3s;
     text-align: center;
-    width: 100%;
-    align-items: baseline;
+}
 
-    a {
-        color: #252525;
-        text-decoration: none;
-        transition: 0.3s;
+/* :hover 滑入 */
+#navbar nav a:hover {
+    color: indianred;
+    font-size: 50px;
+}
 
-        &:hover {
-            color: #ddd;
-        }
+#brand {
+    width: 45%;
+    margin: 0 auto;
 
-        &:nth-child(3) {
-            font-size: 36px;
-        }
+    img {
+        margin: 20px;
     }
 }
+
