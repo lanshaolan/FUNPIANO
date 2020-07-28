@@ -69,6 +69,8 @@ form {
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
     
     
+    
+    
 }
 
 #navbar nav > div {
@@ -90,9 +92,11 @@ form {
 
 #navbar nav a {
     /* 文字-裝飾 - 底線、刪除線 */
+    font-family: 'Noto Serif TC', serif;
     text-decoration: none;
-    color: white;
-    font-size: 40px;
+    text-shadow: goldenrod;
+    color:white;
+    font-size: 30px;
     /* 轉場：時間 */
     transition: 0.3s;
     text-align: center;
@@ -100,8 +104,8 @@ form {
 
 /* :hover 滑入 */
 #navbar nav a:hover {
-    color: indianred;
-    font-size: 50px;
+    color: red;
+    font-size: 40px;
 }
 
 #brand {

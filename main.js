@@ -6,11 +6,11 @@ Vue.component("navbar", {
     template: `
     <nav>
         <a href="./index.html">隨聲琴奏</a>
-        <a href="./about.html">關於我們</a>
-        <a href="./product.html">產品</a>
-        <a href="./service.html">支援服務</a>
-        <a href="./new.html">最新消息</a>
-        <a href="./contact.html">聯絡我們</a>
+        <a href="./about.html">ABOUT US</a>
+        <a href="./product.html">PRODUCT</a>
+        <a href="./service.html">SERVICE</a>
+        <a href="./new.html">NEWS</a>
+        <a href="./contact.html">CONTACT</a>
     </nav>
     `
 })

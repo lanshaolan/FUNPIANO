@@ -88,9 +88,11 @@ form {
 
 #navbar nav a {
   /* 文字-裝飾 - 底線、刪除線 */
+  font-family: 'Noto Serif TC', serif;
   text-decoration: none;
+  text-shadow: goldenrod;
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   /* 轉場：時間 */
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -99,8 +101,8 @@ form {
 
 /* :hover 滑入 */
 #navbar nav a:hover {
-  color: indianred;
-  font-size: 50px;
+  color: red;
+  font-size: 40px;
 }
 
 #brand {
