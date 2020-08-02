@@ -107,7 +107,8 @@ form {
 
 #brand {
   width: 45%;
-  margin: 100px 100px 250px 400px;
+  margin: 100px 100px 250px 600px;
+  position: center;
 }
 
 #brand img {
